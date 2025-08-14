@@ -1,0 +1,108 @@
+ @media only screen and (min-width:300px) and (max-width:600px) {
+     .container {
+         width: 80%;
+         height: 400px;
+
+
+     }
+
+     .app-name {
+         font-family: 'Poppins', sans-serif;
+         font-size: 0.5rem;
+         text-align: center;
+         font-weight: 700;
+
+     }
+
+     .header {
+         width: 90%;
+         margin: auto;
+         margin-top: 5px;
+     }
+
+     input {
+         padding: 10px;
+         border: 1px solid white;
+         border-radius: 10px;
+
+     }
+
+     input::placeholder {
+         font-size: 0.6rem;
+     }
+
+
+     button {
+         text-align: center;
+     }
+
+     button i {
+         padding: 13px;
+     }
+
+     .imageSection {
+         height: 80px;
+         width: 40%;
+         margin-top: 50px;
+         text-align: center;
+
+     }
+
+     
+     .tempdescription {
+         padding: 10px;
+         font-size: 15px;
+         color: white;
+     }
+
+     #temprature {
+         font-size: 17px;
+         color: white;
+     }
+
+     /* footer section responsiveness */
+
+     .footer {
+        margin-top: 100px;
+         height: 50px;
+         width: 100%;
+     }
+
+     .humiditySection {
+         gap: 8px;
+     }
+
+     .humiditySection i {
+         font-size: 15px;
+         color: rgb(21, 160, 215);
+     }
+
+     .humidity {
+         font-size: 0.5rem;
+     }
+
+     #humidityValue {
+         font-size: 10px;
+         color: white;
+     }
+
+     .windSpeedSection  {
+         gap: 5px;
+     }
+      .windSpeedSection i {
+         font-size: 15px;
+         padding: 10px;
+     }
+
+
+     .windSpeed {
+         font-size: 0.5rem;
+     }
+
+     #windValue {
+         color: #a9cee8;
+         font-size: 8px;
+         color: #ffffff;
+     }
+
+ }

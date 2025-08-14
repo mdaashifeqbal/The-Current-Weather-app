@@ -1,0 +1,197 @@
+ * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+
+ body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+
+ /* video styled as background */
+ body .bg-video {
+    position: fixed;
+    /* covers whole screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* fill without stretching */
+    z-index: -1;
+    /* behind your container */
+ }
+
+ .container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 25px;
+    /* ✨ Glass / Mirror effect */
+    background: rgba(255, 255, 255, 0.1);
+    /* slight white tint */
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    /* Safari support */
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* subtle border */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    /* depth shadow */
+    padding: 20px;
+ }
+
+ .app-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+ }
+
+ /* input and button style */
+
+ .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+ }
+
+ input {
+    padding: 12px;
+    margin: 10px;
+    flex-basis: 80%;
+    border: none;
+    border-radius: 12px;
+    background-color: transparent;
+    border: 2px solid rgb(220, 220, 232);
+
+ }
+
+ input:focus {
+    outline: none;
+ }
+
+ input::placeholder {
+
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+
+
+ }
+
+ input:focus {
+    outline: none;
+ }
+
+ button {
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+    font-size: 15px;
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+
+    background-color: transparent;
+ }
+
+ /* image section style */
+ .imageSection {
+    height: 280px;
+    width: 65%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+ }
+
+ .tempdescription {
+    padding: 10px;
+    color: #a9cee8;
+ }
+
+ #temprature {
+    font-size: 30px;
+    color: #a9cee8
+ }
+
+ .imageSection img {
+    height: 100%;
+    width: 100%;
+ }
+
+ /* footer section style */
+ .footer {
+    height: 100px;
+    width: 100%;
+    margin: 100px 0px 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+ }
+
+ .humiditySection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+ }
+
+ .humiditySection i {
+    font-size: 40px;
+    color: #00FFFF;
+ }
+
+.humidity{
+   font-size: 1.5rem;
+   text-align: center;
+}
+ #humidityValue {
+    font-size: 30px;
+    color: #a9cee8;
+    text-align: center;
+ }
+
+  .windSpeedSection i {
+    font-size: 40px;
+    padding: 10px;
+ }
+
+ .windSpeedSection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+ }
+
+ .windSpeedSection i {
+    font-size: 35px;
+    color: rgb(88, 170, 242);
+ }
+.windSpeed{
+   font-size: 1.5rem;
+   text-align: center;
+}
+ #windValue {
+    color: #a9cee8;
+    font-size: 30px;
+ }
